@@ -38,6 +38,11 @@ class PrototypesB {
 // PrototypesB.prototype = Prototypes.prototype
 // PrototypesB = Prototypes
 
-const prototypesBObject = new PrototypesB;
+// const prototypesBObject = new PrototypesB;
 
-prototypesBObject.greet()
+// prototypesBObject.greet()
+
+// ################# Arrow Function #####################
+const arrorFunction = (a,b) => a*b;
+
+console.log(arrorFunction(3,4))
