@@ -11,7 +11,7 @@ addButton.addEventListener('click', () => {
    inputText.value = "";
 
    const delButton = document.createElement("button")
-   delButton.innerText = "Delete";
+   delButton.innerText = "Completed";
       delButton.addEventListener("click", () => {
         li.remove()
       } )
