@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index for Promises</title>
+</head>
+<body>
+    <ul id="items"></ul>
+    <script>
+
+        function renderToScreen(obj){
+            const items = document.getElementById('items')
+            const jokes = obj.data.data;
+            console.log(jokes);
+            jokes.forEach(joke => {
+                {
+            const li = document.createElement('li')
+            li.innerText = joke.content;
+            items.appendChild(li);
+                }
+                    });
+        } 
+            
+                
+      
+
+         fetch("https://api.freeapi.app/api/v1/public/randomjokes")
+         .then((response) => response.json())
+         .then(renderToScreen)
+         .catch((error) => console.log("some error happened"))
+        
+         
+     
+        
+    </script>
+</body>
+</html>
